@@ -1,0 +1,414 @@
+/* 右側の目次を消す */
+.md-nav--secondary {
+    display: none !important;
+}
+
+/* サイドバー非表示 */
+.md-sidebar--primary {
+    display: none !important;
+}
+
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+.md-search {
+    display: none !important;
+}
+
+/* メインコンテンツ */
+.md-content {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    padding: 60px 60px !important;
+}
+
+/* 大見出し（HORUS 2027...） */
+.md-content h1 {
+    font-size: 2em;
+    font-weight: 900;
+    color: #000;
+    text-shadow: 2px 2px 4px hwb(50 58% 5% / 0.744);
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+/* サブタイトル（Astronomy and Space Science...） */
+.subtitle {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin: 15px 0 30px 0;
+    color: #333;
+    text-shadow: 1px 1px 3px hwb(50 58% 5% / 0.744);
+}
+
+/*サブタイトル２(August 1 - 6, 2027 / Luxor, Egypt)*/
+.subtitle2,
+.subtitle2:link,
+.subtitle2:visited,
+.subtitle2:hover,
+.subtitle2:active {
+    color: #fff !important;
+}
+
+.subtitle2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    margin: 15px 0 30px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0 0 12px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.subtitle2:hover {
+    opacity: 0.75;
+}
+
+/* 小見出し（Rationale, Format, SOC） */
+.md-content h2 {
+    color: #b65d25 !important;
+    font-weight: 900;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-decoration-color: #b65d25;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+/* 各コンテナの h2 スタイル */
+.rationale-container h2 {
+    grid-column: 1 / -1;
+    padding: 15px 0 10px 0 !important;
+    margin: 0 !important;
+}
+
+.box-content h2 {
+    padding: 15px 0 10px 0 !important;
+    margin: 0 !important;
+}
+
+.latest-info h2 {
+    color: hsl(60, 3%, 7%) !important;
+    padding: 0 !important;
+    margin: 0 0 15px 0 !important;
+}
+
+/* Date + Location 中央揃え */
+.info-header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.info-header p {
+    margin: 8px 0;
+    font-size: 1.05em;
+}
+
+/* 薄色ボックス - Format用（半透明・クリーム） */
+.box-content {
+    background: rgba(250, 245, 238, 0.88);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 70px 0;
+}
+
+/* Rationaleボックス（左右に分ける、半透明・クリーム） */
+.rationale-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    background: rgba(250, 245, 238, 0.88);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 70px 0;
+}
+
+.rationale-text {
+    text-align: left;
+}
+
+.rationale-logo {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    text-align: center;
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* ロゴを列いっぱいに表示 */
+.rationale-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* ロゴの縁を消す */
+.rationale-logo img {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Rationale と Format の本文を両端揃え */
+.md-content .rationale-text,
+.md-content .box-content {
+    text-align: justify;
+}
+
+/* SOC / LOC 横並び */
+.committee-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    margin: 50px 0;
+}
+
+.committee-box {
+    flex: 1;
+    min-width: 0;
+    background-color: rgba(250, 245, 238, 0.88);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    padding: 10px 30px 30px;
+}
+
+.md-content .member-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 名前=左端 / 所属=右端 */
+.md-content .member-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0.5em 0;
+    line-height: 1.5;
+}
+
+.md-content .member-list .m-name {
+    white-space: nowrap;
+}
+
+.md-content .member-list .m-affil {
+    text-align: right;
+}
+
+/* SOC専用：名前・分野・所属を1行で表示する表組み */
+.md-content .soc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.md-content .soc-table td,
+.md-content .soc-table th {
+    border: none;
+    padding: 5px 8px;
+    text-align: left;
+    vertical-align: baseline;
+    font-size: 0.95em;
+}
+
+.md-content .soc-table th {
+    padding: 18px 8px 6px 8px;
+    color: #b65d25;
+    font-weight: 900;
+    font-size: 1.05em;
+}
+
+.md-content .soc-table tr:first-child th {
+    padding-top: 0;
+}
+
+.md-content .soc-table .m-field {
+    color: #666;
+    font-style: italic;
+}
+
+.md-content .soc-table .m-affil {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* スマホ幅では1列に積む */
+@media screen and (max-width: 768px) {
+    .md-content .soc-table,
+    .md-content .soc-table tbody,
+    .md-content .soc-table tr,
+    .md-content .soc-table td,
+    .md-content .soc-table th {
+        display: block;
+        width: 100%;
+    }
+
+    .md-content .soc-table .m-affil {
+        text-align: left;
+        color: #666;
+        margin-bottom: 0.6em;
+    }
+}
+
+/* 画面が狭いときは縦積みに */
+@media screen and (max-width: 768px) {
+    .committee-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* SOCボックス：横幅いっぱい＋内部スクロール */
+.soc-box {
+    margin: 70px 0 40px 0;
+}
+
+.soc-scroll {
+    max-height: 480px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Latest Information タブ（半透明・クリーム） */
+.latest-info {
+    border: 1px solid #ccc;
+    background-color: rgba(250, 245, 238, 0.88);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 20px;
+    margin: 70px 0;
+    border-radius: 8px;
+}
+
+.info-scroll {
+    height: 90px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.info-scroll ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-scroll li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95em;
+}
+
+.info-scroll li:last-child {
+    border-bottom: none;
+}
+
+.info-date {
+    font-weight: bold;
+    color: #333;
+}
+
+.info-text {
+    color: #666;
+    margin-left: 10px;
+}
+
+/* リストの左端を見出しに揃える */
+.md-content .committee-box .member-list {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.md-content .committee-box .member-list li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* ヘッダーのロゴを白く表示 */
+.md-header__button.md-logo img {
+    filter: brightness(0) invert(1);
+    height: 1.6rem;
+    width: auto;
+}
+
+/* ポスタートリガー・モーダル */
+.poster-trigger {
+    cursor: pointer;
+}
+
+.poster-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.poster-modal:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.poster-modal-content {
+    position: relative;
+    z-index: 1001;
+}
+
+.poster-modal-content img {
+    display: block;
+    max-width: 95vw;
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+.poster-modal-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1002;
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1;
+    text-decoration: none;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.poster-modal-close:hover {
+    opacity: 0.7;
+}
+
+/* 半透明の白ボックス（Venueページなど、背景画像が透けて見える・クリーム） */
+.glass-box {
+    background: rgba(250, 245, 238, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 70px 0;
+}
