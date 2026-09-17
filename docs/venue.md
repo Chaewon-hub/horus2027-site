@@ -13,4 +13,12 @@
 
 <p>Location on maps: <a href="https://maps.app.goo.gl/FwXTPSGtktLhXVvs5" target="_blank" rel="noopener">https://maps.app.goo.gl/FwXTPSGtktLhXVvs5</a></p>
 
+<iframe
+class="map-embed"
+src="https://www.google.com/maps?q=Center+for+Archaeological+Studies+and+International+Heritage,+Luxor,+Egypt&output=embed"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-upgrade">
+</iframe>
+
 </div>
