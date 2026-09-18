@@ -3,11 +3,6 @@
     display: none !important;
 }
 
-/* サイドバー非表示 */
-.md-sidebar--primary {
-    display: none !important;
-}
-
 .md-sidebar--secondary {
     display: none !important;
 }
@@ -467,4 +462,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     margin: 20px 0 0 0;
+}
+
+/* PC幅ではサイドバーを非表示（既にヘッダーの横並びタブで代用しているため） */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none !important;
+    }
 }
