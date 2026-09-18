@@ -6,25 +6,25 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
 </style>
 
 # HORUS 2027: Heliophysics and the ORigins of oUr Stars
-
 
 <div class="subtitle">Astronomy and Space Science beneath the Solar Eclipse</div>
 
 <div class="info-header">
 
-<a href="#invitation_poster" class="subtitle2 poster-trigger">August 1 - 6, 2027 / Luxor, Egypt</a>
+<a href="#Conference-Invitation-Poster-(HORUS2027-Invitation-Poster.jpeg)" class="subtitle2 poster-trigger">August 1 - 6, 2027 / Luxor, Egypt</a>
 
-<div id="invitation_poster" class="poster-modal">
+<p class="poster-hint"><a href="#Conference-Invitation-Poster-(HORUS2027-Invitation-Poster).jpeg">Click here to view the invitation for HORUS 2027</a></p>
+
+<div id="Conference-Invitation-Poster-(HORUS2027-Invitation-Poster).jpeg" class="poster-modal">
 <a href="#" class="poster-modal-overlay" aria-label="閉じる"></a>
 <div class="poster-modal-content">
 <a href="#" class="poster-modal-close" aria-label="閉じる">&times;</a>
-<img src="images/poster.jpeg" alt="HORUS 2027 Invitation Poster">
+<img src="images/HORUS2027-Invitation-Poster.jpeg" alt="HORUS 2027 Invitation Poster">
+<a href="images/HORUS2027-Invitation-Poster.jpeg" download="Conference Invitation Poster (HORUS2027-Invitation-Poster).jpeg" class="poster-download">⬇ Download Poster</a>
 </div>
-
 </div>
 
 </div>
@@ -60,13 +60,13 @@ An Interdisciplinary conference on astrophysics and space science with plenary s
 
 <div class="soc-scroll">
 <table class="soc-table">
-<tr><th colspan="3">Astrophysics</th></tr>
-<tr><td class="m-name">Doris Arzoumanian</td><td class="m-field">Astrochemistry, Star formation</td><td class="m-affil">Kyushu University, Japan</td></tr>
-<tr><td class="m-name">Zainab Awad</td><td class="m-field">Astrochemistry, Star formation</td><td class="m-affil">Cairo University, Egypt</td></tr>
-<tr><td class="m-name">Javier Ballesteros Paredes</td><td class="m-field">Radio Astronomy, Star formation</td><td class="m-affil">UNAM/IRyA, Mexico</td></tr>
-<tr><td class="m-name">Alessio Traficante</td><td class="m-field">Astrochemistry, Star formation</td><td class="m-affil">INAF, Italy</td></tr>
+<tr><th colspan="3"><span>Astrophysics</span></th></tr>
+<tr><td class="m-name">Doris Arzoumanian</td><td class="m-field">Star formation</td><td class="m-affil">Kyushu University, Japan</td></tr>
+<tr><td class="m-name">Zainab Awad</td><td class="m-field">Star formation</td><td class="m-affil">Cairo University, Egypt</td></tr>
+<tr><td class="m-name">Javier Ballesteros-Paredes</td><td class="m-field">Star formation</td><td class="m-affil">UNAM/IRyA, Mexico</td></tr>
+<tr><td class="m-name">Alessio Traficante</td><td class="m-field">Star formation</td><td class="m-affil">INAF, Italy</td></tr>
 
-<tr><th colspan="3">Space Science</th></tr>
+<tr><th colspan="3"><span>Space Science</span></th></tr>
 <tr><td class="m-name">Fawzy Abdel-Salam</td><td class="m-field">Space Dynamics</td><td class="m-affil">Cairo University, Egypt</td></tr>
 <tr><td class="m-name">Essam El-ghamry</td><td class="m-field">Space Physics</td><td class="m-affil">EJUST, Egypt</td></tr>
 <tr><td class="m-name">Huixin Liu</td><td class="m-field">Space Physics</td><td class="m-affil">Kyushu University, Japan</td></tr>
@@ -74,12 +74,12 @@ An Interdisciplinary conference on astrophysics and space science with plenary s
 <tr><td class="m-name">Walid Rahoma</td><td class="m-field">Space Dynamics</td><td class="m-affil">Cairo University, Egypt</td></tr>
 <tr><td class="m-name">Al-Shaimaa Saad</td><td class="m-field">Solar Physics, Space Physics</td><td class="m-affil">Cairo University, Egypt</td></tr>
 
-<tr><th colspan="3">Meteorology and Climate Change</th></tr>
+<tr><th colspan="3"><span>Meteorology and Climate Change</span></th></tr>
 <tr><td class="m-name">Magdy Abdel-Wahab</td><td class="m-field">Atmospheric Physics</td><td class="m-affil">Cairo University, Egypt</td></tr>
 <tr><td class="m-name">Moetasem El-Taweel</td><td class="m-field">Atmospheric Modeling</td><td class="m-affil">Cairo University, Egypt</td></tr>
 <tr><td class="m-name">Maha Harhash</td><td class="m-field">Atmospheric Physics</td><td class="m-affil">Cairo University, Egypt</td></tr>
 
-<tr><th colspan="3">Astroarchaeology</th></tr>
+<tr><th colspan="3"><span>Astroarchaeology</span></th></tr>
 <tr><td class="m-name">Tarek Tawfeek</td><td class="m-field">Egyptology</td><td class="m-affil">Cairo University, Egypt</td></tr>
 <tr><td class="m-name">Naser Mekawy</td><td class="m-field">Egyptology</td><td class="m-affil">Cairo University, Egypt</td></tr>
 </table>
@@ -107,6 +107,7 @@ An Interdisciplinary conference on astrophysics and space science with plenary s
 <li><span class="m-name">Hussain Faried</span><span class="m-affil">Cairo University, Egypt</span></li>
 </ul>
 </div>
+
 </div>
 
 <div class="latest-info">
@@ -115,7 +116,7 @@ An Interdisciplinary conference on astrophysics and space science with plenary s
 <div class="info-scroll">
 
 <ul>
-<li><span class="info-date">2026/09/18</span><span class="info-text">Launching the HORUS 2027 website </span></li>
+<li><span class="info-date">2026/09/19</span><span class="info-text">Launching the HORUS 2027 website </span></li>
 </ul>
 
 </div>

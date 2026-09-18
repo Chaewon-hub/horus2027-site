@@ -68,6 +68,28 @@
     opacity: 0.75;
 }
 
+/* ポスター案内リンク（日付の下） */
+
+.info-header .poster-hint {
+    margin: -30px 0 20px 0;
+}
+
+.poster-hint a,
+.poster-hint a:link,
+.poster-hint a:visited {
+    color: #fff !important;
+    font-size: 0.95em;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    transition: opacity 0.2s ease;
+}
+
+.poster-hint a:hover {
+    opacity: 0.75;
+}
+
 /* 小見出し（Rationale, Format, SOC） */
 .md-content h2 {
     color: #b65d25 !important;
@@ -91,11 +113,6 @@
     margin: 0 !important;
 }
 
-.latest-info h2 {
-    color: hsl(60, 3%, 7%) !important;
-    padding: 0 !important;
-    margin: 0 0 15px 0 !important;
-}
 
 /* Date + Location 中央揃え */
 .info-header {
@@ -218,17 +235,27 @@
 .md-content .soc-table td,
 .md-content .soc-table th {
     border: none;
-    padding: 5px 8px;
+    padding: 7px 40px;
     text-align: left;
     vertical-align: baseline;
     font-size: 0.95em;
 }
 
 .md-content .soc-table th {
-    padding: 18px 8px 6px 8px;
+    padding: 28px 32px 12px 32px;
+    border: none;
+}
+
+.md-content .soc-table th span {
+    display: inline-block;
+    border: 2px solid #b65d25;
     color: #b65d25;
+    background: transparent;
     font-weight: 900;
     font-size: 1.05em;
+    letter-spacing: 0.02em;
+    padding: 4px 18px;
+    border-radius: 4px;
 }
 
 .md-content .soc-table tr:first-child th {
@@ -403,6 +430,25 @@
     opacity: 0.7;
 }
 
+/* ポスターのダウンロードボタン */
+.poster-download {
+    display: block;
+    text-align: center;
+    margin-top: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95em;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 20px;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+}
+
+.poster-download:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
 /* 半透明の白ボックス（Venueページなど、背景画像が透けて見える・クリーム） */
 .glass-box {
     background: rgba(250, 245, 238, 0.55);
@@ -413,7 +459,7 @@
     margin: 70px 0;
 }
 
-/* 地図の埋め込み枠 */
+/* 地図の埋め込み枠（Venueページ） */
 .map-embed {
     width: 100%;
     height: 450px;
